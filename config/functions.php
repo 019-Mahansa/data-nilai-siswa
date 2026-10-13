@@ -33,8 +33,6 @@ function  hitungRataRata($siswa){
                 $temp *= 0;
                 $average *= 0;
 
-                echo "<br>";
-
                 break;
 
             }
@@ -59,19 +57,3 @@ function cekKelulusan($rataRata){
 }
 
 
-$rataRata = hitungRataRata($data_siswa);
-
-foreach ($data_siswa as $index => $value) {
-    echo "Nama : ". $value["nama"] . "<br>";
-    echo "Nilai: ";
-
-    foreach($value["nilai"] as $score){
-        echo $score . " ";
-    }
-
-    $average = $rataRata[$index];
-
-    echo "<br>";
-    echo "Rata-rata: " . $average . "<br>";
-    echo "Status: " . cekKelulusan($average) . "<br><br>";
-}

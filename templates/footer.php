@@ -1,1 +1,4 @@
-<p>ini footer create by mahansa</p>
+<footer>
+    <p>Data Nilai Siswa - 2026</p>
+    <p>Dibuat oleh Mahansa menggunakan PHP</p>  
+</footer>
