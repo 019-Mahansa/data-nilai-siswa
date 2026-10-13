@@ -31,7 +31,7 @@ $rataRata = hitungRataRata($data_siswa);
             <?php foreach ($data_siswa as $index => $value): ?>
             <tr>
                 <td><?= $index + 1 ?></td>
-                <td><?= htmlspecialchars($value['nama']) ?></td>
+                <td><?= $value['nama'] ?></td>
                 <td>
                     <?= implode(', ', $value['nilai']) ?>
                 </td>
